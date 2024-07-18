@@ -10,36 +10,48 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         header {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
-        }
-
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            background-color: #f0f0f0;
+            padding: 10px 0;
         }
 
         .container {
-            max-width: 800px;
+            width: 80%;
             margin: auto;
-            padding: 0 20px;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            text-align: center;
+            background: #f0f0f0;
+            height: 300px;
+            overflow: auto;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        article {
+            float: left;
+            width: 78%;
+            background: #fff;
+            padding: 20px;
         }
 
         footer {
@@ -47,9 +59,7 @@
             padding: 10px;
             background-color: #333;
             color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            clear: both;
         }
     </style>
 </head>
@@ -60,15 +70,17 @@
     </header>
     <div class="container">
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
-        <section>
+        <article>
             <h2>Home</h2>
-            <p>Welcome to our simple HTML website!</p>
-        </section>
+            <p>Welcome to our simple HTML website! This example demonstrates a basic two-column layout using float.</p>
+        </article>
     </div>
     <footer>
         <p>&copy; 2024 Simple HTML Website. All rights reserved.</p>
