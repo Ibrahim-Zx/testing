@@ -1,0 +1,55 @@
+        /* CSS styles can be included within <style> tags in the head */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            text-align: center;
+            background: #f0f0f0;
+            height: 300px;
+            overflow: auto;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        article {
+            float: left;
+            width: 78%;
+            background: #fff;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            clear: both;
+        }
